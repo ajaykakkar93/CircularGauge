@@ -1,0 +1,67 @@
+.qv-object-circularGuage div.qv-object-content-container {
+    overflow: auto;
+}
+
+
+/*** RADIAL PROGRESS ***/
+
+
+/* Circumference = 2πr */
+
+
+/* π = 3.1415926535898 */
+
+
+/* r = 35 */
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 0.5em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0, 0, 0, 0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129;
+    /* Circumference */
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+    stroke-dasharray: 219.91148575129;
+    /* Circumference */
+}
+
+svg.radial-progress text {
+    fill: #000;
+    text-anchor: middle;
+}
+
+svg.qlik_default path {
+    will-change: auto;
+    stroke-width: 10px;
+    stroke-miterlimit: round;
+}
+
+svg.qlik_default path.incomplete {
+    opacity: 0.25;
+}
+
+svg.qlik_default path.complete {
+    stroke-dasharray: 219.91148575129;
+    /* Circumference */
+}
+
+
+/* Primary 
+
+	svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+
+*/
